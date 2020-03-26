@@ -20,9 +20,7 @@ mongoose_1.default.connect(MONGO_DB_CLIENT, {
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
-    .then(response => {
-    console.log('Mongo DB is connected');
-})
+    .then(response => { })
     .catch(err => console.error(err));
 // Bearer Token
 app.use(express_bearer_token_1.default());
